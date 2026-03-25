@@ -169,6 +169,7 @@
         if (res.ok) {
           submitBtn.textContent = 'SENT';
           contactForm.querySelectorAll('input, textarea').forEach(el => el.disabled = true);
+          contactForm.reset();
           formSuccess.style.display = '';
           formSuccess.classList.add('visible');
         } else {
