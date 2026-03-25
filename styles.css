@@ -543,7 +543,11 @@ ul { list-style: none; }
 .skill-card-body { padding: 28px; display: flex; flex-direction: column; gap: 14px; }
 
 .skill-card-header { display: flex; align-items: center; gap: 10px; }
-.skill-emoji { font-size: 18px; line-height: 1; }
+.skill-emoji {
+  display: flex; align-items: center; justify-content: center;
+  width: 22px; height: 22px;
+  color: var(--cyan); flex-shrink: 0;
+}
 .skill-cat {
   font-family: 'DM Mono', monospace;
   font-size: 11px; font-weight: 600;
@@ -859,8 +863,8 @@ ul { list-style: none; }
   .about-cols  { flex-direction: column; }
   .about-right { display: none; }
   .skills-grid, .projects-grid { grid-template-columns: 1fr; }
-  .edu-grid    { flex-direction: column; }
-  .contact-grid{ flex-direction: column; gap: 48px; }
+  .edu-grid    { flex-direction: column; align-items: stretch; }
+  .contact-grid{ flex-direction: column; gap: 48px; align-items: stretch; }
   .form-row    { flex-direction: column; }
   .tl-line     { left: 0; }
   .tl-item     { padding-left: 20px; }
@@ -877,8 +881,9 @@ ul { list-style: none; }
   .section-title { font-size: 28px; }
   .hero-content  { left: 20px; width: calc(100% - 40px); padding-top: 72px; }
   .hero-desc     { font-size: 14px; }
-  .cta-row       { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .btn-primary, .btn-outline { width: 100%; text-align: center; justify-content: center; }
+  .cta-row       { flex-direction: column; align-items: stretch; gap: 12px; }
+  .btn-primary, .btn-ghost { width: 100%; text-align: center; justify-content: center; }
+  .scroll-wrap   { left: 50%; transform: translateX(-50%); bottom: 28px; }
   .about-visual  { width: 260px; height: 260px; }
   .skill-card    { padding: 24px 20px; }
   .contact-detail { font-size: 13px; }
