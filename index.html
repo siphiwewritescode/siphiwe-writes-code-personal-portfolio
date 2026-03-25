@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -449,16 +449,15 @@
           <button type="submit" class="btn-submit" id="submit-btn">SEND MESSAGE</button>
         </form>
 
-        <!-- Success message (hidden until form submits) -->
-        <div class="form-success" id="form-success" hidden>
+        <!-- Success message (shown after successful submit) -->
+        <div class="form-success" id="form-success" style="display:none">
           <div class="form-success__icon">
-            <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="26" cy="26" r="25" stroke="#23E5E7" stroke-width="2"/>
-              <path d="M14 26 L22 34 L38 18" stroke="#23E5E7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="9" stroke="#4ade80" stroke-width="1.5"/>
+              <path d="M6 10 L8.5 12.5 L14 7.5" stroke="#4ade80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <p class="form-success__title">Your message has been sent! 😊</p>
-          <p class="form-success__sub">I'll get back to you as soon as possible.</p>
+          <p class="form-success__title">Your message has been sent.</p>
         </div>
 
       </div>
@@ -487,6 +486,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js?v=2"></script>
 </body>
 </html>

@@ -167,8 +167,10 @@
         });
 
         if (res.ok) {
-          contactForm.hidden = true;
-          formSuccess.hidden = false;
+          submitBtn.textContent = 'SENT';
+          contactForm.querySelectorAll('input, textarea').forEach(el => el.disabled = true);
+          formSuccess.style.display = '';
+          formSuccess.classList.add('visible');
         } else {
           const data = await res.json();
           const msg  = data.errors ? data.errors.map(e => e.message).join(', ') : 'Something went wrong.';
