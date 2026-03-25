@@ -168,8 +168,10 @@
 
         if (res.ok) {
           submitBtn.textContent = 'SENT';
-          contactForm.querySelectorAll('input, textarea').forEach(el => el.disabled = true);
-          contactForm.reset();
+          contactForm.querySelectorAll('input, textarea').forEach(el => {
+            el.value = '';
+            el.disabled = true;
+          });
           formSuccess.style.display = '';
           formSuccess.classList.add('visible');
         } else {
