@@ -10,6 +10,12 @@ desktop.ini
 .vscode/
 .idea/
 
+# Firebase local cache
+.firebase/
+
+# Playwright test artifacts
+.playwright-mcp/
+
 # Logs
 *.log
 
