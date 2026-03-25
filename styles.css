@@ -99,7 +99,8 @@ ul { list-style: none; }
 .hero-container {
   max-width: 1440px;
   margin: 0 auto;
-  height: 740px;
+  height: auto;
+  padding-bottom: 72px;
   position: relative;
   overflow: hidden;
 }
@@ -129,15 +130,13 @@ ul { list-style: none; }
 
 /* Hero content — pushed toward top, not centered */
 .hero-content {
-  position: absolute;
-  left: 64px;
-  top: 0;
+  position: relative;
+  margin-left: 64px;
   width: 720px;
-  height: 740px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 56px;        /* breathing room below nav */
+  padding-top: 56px;
   gap: 24px;
 }
 
@@ -209,11 +208,11 @@ ul { list-style: none; }
 /* Stats panel */
 .hero-stats {
   position: absolute;
-  right: 90px; top: 0;
-  width: 220px; height: 740px;
+  right: 90px; top: 56px;
+  width: 220px;
   display: flex; flex-direction: column;
   justify-content: flex-start;
-  padding-top: 130px;
+  padding-top: 74px;
   gap: 48px;
 }
 
@@ -825,8 +824,8 @@ ul { list-style: none; }
    ============================================================ */
 @media (max-width: 1100px) {
   .nav-inner, .footer-inner { padding: 0 32px; }
-  .hero-content { left: 32px; width: 580px; padding-top: 56px; }
-  .hero-stats   { right: 32px; padding-top: 110px; }
+  .hero-content { margin-left: 32px; width: 580px; padding-top: 56px; }
+  .hero-stats   { right: 32px; top: 56px; padding-top: 74px; }
   .hero-divider-line { display: none; }
   .section-inner { padding: 96px 32px; }
 }
